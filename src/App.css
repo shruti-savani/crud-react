@@ -1,38 +1,102 @@
-.App {
+body {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-text input {
+  width: 250px;
+  height:30px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  margin-bottom: 7px;
+  background-color: rgb(229, 229, 229);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-text input:hover {
+  border: 2px solid rgb(150, 150, 150);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.submit-button button{
+  width: 65px;
+  height: 28px;
+  border: none;
+  border-radius: 5px;
+  background-color: #95e722;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.submit-button button:hover{
+  background-color: #80cc6d;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table-items {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.table-items th,td {
+  padding: 5px 50px 5px 50px;
+  border-radius: 5px;
+}
+
+.table-items th{
+  background-color: #086375;
+  color: white;
+}
+
+.table-items td{
+  background-color: #b6d0d5;
+}
+
+.delete-button {
+  width: 60px;
+  height: 23px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 3px;
+  background-color: white;
+}
+
+.update-button {
+  width: 60px;
+  height: 23px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 3px;
+  background-color: white;
+}
+
+.delete-button:hover {
+  background-color: #7aa1a9;
+  color:white;
+}
+
+.update-button:hover {
+  background-color: #7aa1a9;
+  color:white;
+}
+
+.edit-item-field input {
+  height: 22px;
+  margin-right: 5px;
+  background-color: rgb(229, 229, 229);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 50px 5px 0px;
+}
+
+.save-changes {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #95e722;
+  color: white;
+}
+
+.save-changes:hover{
+  background-color: #80cc6d;
+  color: black;
 }
